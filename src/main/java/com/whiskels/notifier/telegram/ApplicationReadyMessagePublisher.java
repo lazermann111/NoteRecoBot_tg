@@ -1,6 +1,6 @@
 package com.whiskels.notifier.telegram;
 
-import com.whiskels.notifier.slack.reporter.SlackReporter;
+
 import com.whiskels.notifier.telegram.builder.MessageBuilder;
 import com.whiskels.notifier.telegram.events.SendMessageCreationEvent;
 import com.whiskels.notifier.telegram.handler.AbstractBaseHandler;
@@ -34,7 +34,6 @@ public class ApplicationReadyMessagePublisher {
                 .line()
                 .line("*Bot handlers:* %s", getBeanSimpleClassNames(AbstractBaseHandler.class))
                 .line()
-                .line("*Slack reporters:* %s", getBeanSimpleClassNames(SlackReporter.class))
                 .build()));
         log.debug("Start report sent to Admin");
     }

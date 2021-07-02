@@ -2,7 +2,6 @@ package com.whiskels.notifier.telegram.annotation;
 
 import com.whiskels.notifier.telegram.Command;
 import com.whiskels.notifier.telegram.domain.Role;
-import com.whiskels.notifier.telegram.handler.impl.DebtHandler;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 

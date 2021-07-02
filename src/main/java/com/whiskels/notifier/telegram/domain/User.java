@@ -41,22 +41,17 @@ public class User extends AbstractBaseEntity {
     @BatchSize(size = 200)
     private Set<Role> roles;
 
-    @OneToMany(fetch = LAZY, mappedBy = "user")
-    @OrderBy("hour DESC")
-    private List<Schedule> scheduleList;
-
     public User(int chatId) {
         this.chatId = chatId;
         this.name = String.valueOf(chatId);
         this.roles = Set.of(Role.UNAUTHORIZED);
     }
 
-    public User(Integer id, @NotNull int chatId, @NotBlank String name, Set<Role> roles, List<Schedule> scheduleList) {
+    public User(Integer id, @NotNull int chatId, @NotBlank String name, Set<Role> roles) {
         super(id);
         this.chatId = chatId;
         this.name = name;
         this.roles = roles;
-        this.scheduleList = scheduleList;
     }
 
     @Override

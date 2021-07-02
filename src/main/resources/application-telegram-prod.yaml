@@ -2,5 +2,5 @@ spring:
   profiles.include: telegram-common
 telegram:
   bot:
-    name: ${BOT_NAME}
-    token: ${BOT_TOKEN}
+    name:  NoteRecoBot
+    token: 1822141024:AAHy4iRZIlgabFXZgpaOi1OIzkZLpHq2kBI

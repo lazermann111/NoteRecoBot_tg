@@ -14,7 +14,6 @@ In order to run this bot:
  - add bot token and name to application.yaml (required minimum to compile the project and run bot);
  - add bot admin token to application.yaml (to get start up report and receive unauthorized messages);
  - make changes to services that use JSON data as those defined in this project are built in order to work with API given by the customer;
- - add slack webhook URL's to receive scheduled messages to designated slack channel.
 
 ___
 ### Technology stack: 

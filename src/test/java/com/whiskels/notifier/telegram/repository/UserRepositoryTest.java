@@ -58,7 +58,7 @@ class UserRepositoryTest extends AbstractRepositoryTest {
     @Sql(scripts = {"classpath:db/clear.sql", "classpath:db/add_users.sql"}, config = @SqlConfig(encoding = "UTF-8"))
     void testUpdateUser() {
         //given
-        User expected = new User(1, 1, "Updated name", null, null);
+        User expected = new User(1, 1, "Updated name", null);
 
         //when
         userRepository.save(expected);

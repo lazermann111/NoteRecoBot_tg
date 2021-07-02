@@ -3,8 +3,3 @@ spring:
   database:
     username: ${JDBC_DATABASE_USERNAME}
     password: ${JDBC_DATABASE_PASSWORD}
-external:
-  customer:
-    debt.url: ${CUSTOMER_DEBT_JSON_URL}
-    operation.url: ${CUSTOMER_RECEIVABLE_JSON_URL}
-  employee.url: ${EMPLOYEE_URL}
